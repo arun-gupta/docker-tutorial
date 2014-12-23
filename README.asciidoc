@@ -7,8 +7,10 @@
 . Docker commands
 . Running a Java application in
 .. Single Docker container
-.. Two Docker containers and linking them
+.. Two Docker containers (WildFly and MySQL) and linking them
+... Storing MySQL state on a bound volume
 ... Orchestration using Fig
+.... Fig scale
 .. Two Docker containers on two different hosts
 . Kubernetes
 
