@@ -1,7 +1,15 @@
 = Docker Tutorial
 
 . What is Docker?
+.. How is it different from VM?
+.. What is relationship with Vagrant?
+.. Quick demo: compare VirtalBox and Docker bash
+.. What are the key components? (build, run, distribute)
 . How to get started with Docker?
+.. On Fedora/Linux
+.. On Mac
+.. On Windows
+. Dockerfile syntax
 . Using a Docker image
 . Creating a Docker image
 . Docker commands
@@ -13,4 +21,5 @@
 .... Fig scale
 .. Two Docker containers on two different hosts
 . Kubernetes
+. Connect to Docker containers from JBoss Tools
 
