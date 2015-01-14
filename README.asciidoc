@@ -41,7 +41,27 @@ Docker uses Linux Containers to provide isolation, sandboxing, reproducibility, 
 
 Docker daemon and client for different operating systems can be installed from http://docs.docker.com/installation/. As you can see, it can be installed on a wide variety of platforms, including Mac and Windows. Refer to https://github.com/burrsutter/docker_tutorial[this excellent tutorial] for getting started on Windows.
 
-For non-Linux machines, a lightweight Virtual Machine needs to be installed and Daemon is installed within that. A native client is then installed on the machine that communicates with the Daemon. Here is the log from booting Docker daemon on Mac:
+For non-Linux machines, a lightweight Virtual Machine needs to be installed and Daemon is installed within that. A native client is then installed on the machine that communicates with the Daemon.
+
+image::images/boot2docker-logo.png[]
+
+Download latest Boot2docker installer from https://github.com/boot2docker/osx-installer/releases/latest.
+
+Run the installer to install:
+
+. VirtualBox VM which is Docker host
+. Docker daemon within the VM
+. Boot2docker management tool
+
+Detailed install instrutions for Mac are at docker.com/installation/mac.
+
+VirtualBox VM can be easily verified by running VirtualBox manager:
+
+image::images/virtualbox-boot2docker-vm.png[]
+
+TODO: What happens if Mac does not have VirtualBox already installed?
+
+Here is the log from booting Docker daemon on Mac:
 
 .boot2docker boot log on Mac OS
 ====
@@ -55,6 +75,8 @@ if [ ! -f ~/.boot2docker/boot2docker.iso ]; then cp /usr/local/share/boot2docker
 /usr/local/bin/boot2docker up 
 $(/usr/local/bin/boot2docker shellinit)
 docker version
+Last login: Mon Jan  5 11:07:35 on ttys003
+hello arungupta
 ~> bash
 ~> unset DYLD_LIBRARY_PATH ; unset LD_LIBRARY_PATH
 ~> mkdir -p ~/.boot2docker
@@ -78,10 +100,18 @@ To connect the Docker client to the Docker daemon, please set:
 Writing /Users/arungupta/.boot2docker/certs/boot2docker-vm/ca.pem
 Writing /Users/arungupta/.boot2docker/certs/boot2docker-vm/cert.pem
 Writing /Users/arungupta/.boot2docker/certs/boot2docker-vm/key.pem
+~> docker version
+Client version: 1.3.1
+Client API version: 1.15
+Go version (client): go1.3.3
+Git commit (client): 4e9bbfa
+OS/Arch (client): darwin/amd64
+Server version: 1.3.2
+Server API version: 1.15
+Go version (server): go1.3.3
+Git commit (server): 39fa2fa
 ----
 ====
-
-Docker Daemon and Client can be installed on Mac following the instructions at docs.docker.com/installation/mac.
 
 . Quick demo: compare VirtualBox and Docker bash
 
@@ -89,21 +119,37 @@ Docker Daemon and Client can be installed on Mac following the instructions at d
 
 === Docker commands
 
-. Running a Java application in
-.. Single Docker container
-.. Two Docker containers (WildFly and MySQL) and linking them
-... Storing MySQL state on a bound volume
-... Orchestration using Fig
-.... Fig scale
-.. Two Docker containers on two different hosts
+= Java application in Docker
+
+== Single Docker container
+
+== Two Docker containers (WildFly and MySQL) using linking
+
+http://blog.arungupta.me/wildfly-javaee7-mysql-link-two-docker-container-techtip65/
+
+=== Storing MySQL state on a bound volume
+
+=== Orchestration using Fig
+
+http://blog.arungupta.me/docker-orchestration-fig-techtip67/
+
+==== Fig scale
+
+== Two Docker containers on two different hosts
+
+http://blog.arungupta.me/docker-container-linking-across-multiple-hosts-techtip69/
 
 == Creating a Docker image
-=== Dockerfile syntax
 
+=== Dockerfile syntax
 
 == Orchestrating Docker containers using Kubernetes
 
-What is Kubernetes?
+=== What is Kubernetes?
+
+http://blog.arungupta.me/key-concepts-kubernetes/
+
+=== Kubernetes 
 
 == Connect to Docker containers from JBoss Tools
 
