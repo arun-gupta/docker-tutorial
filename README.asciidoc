@@ -18,7 +18,13 @@ Docker is an open source container virtualization platform.
 
 **What is relationship with Vagrant?**
 
-??
+https://www.vagrantup.com/[Vagrant] is a simplified and portable way to create virtual development environments. It works with multiple virtualization software such as VirtualBox, VMWare, AWS, and more. It also works with multiple configuration software such as Ansible, Chef, Puppet, or Salt.
+
+Starting with version 1.6, Docker containers can be used as one of the backend providers for Vagrant as well. This allows your development environment to be based on Docker containers as opposed to full Virtual Machines. Read more about this at http://docs.vagrantup.com/v2/docker/index.html.
+
+The complete development environment definition is defined in a text file, typically called as ``Vagrantfile''. This file defines the type of machine, software that needs to be installed, networking, and other configuration information.
+
+`vagrant up` creates the development environment based upon the configuration defined in the file. `vagrant up --provider=aws` will create the development environment for AWS. Similarly `vagrant up --provider=docker` will create it for the Docker image.
 
 === Key components
 
