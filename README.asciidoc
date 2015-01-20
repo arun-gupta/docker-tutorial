@@ -26,6 +26,8 @@ The complete development environment definition is defined in a text file, typic
 
 `vagrant up` creates the development environment based upon the configuration defined in the file. `vagrant up --provider=aws` will create the development environment for AWS. Similarly `vagrant up --provider=docker` will create it for the Docker image.
 
+More details: http://blog.arungupta.me/vagrant-docker-wildfly-wildfly-javaee7/
+
 === Key components
 
 Docker has three main components:
