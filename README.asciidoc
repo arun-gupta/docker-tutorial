@@ -161,6 +161,18 @@ http://blog.arungupta.me/key-concepts-kubernetes/
 
 http://blog.arungupta.me/build-kubernetes-on-mac-techtip70/
 
+=== Java EE 7 and WildFly on Kubernetes using Vagrant
+
+http://blog.arungupta.me/javaee7-wildfly-kubernetes-mac-vagrant/
+
+=== MySQL as Kubernetes Service, Access from WildFly Pod
+
+http://blog.arungupta.me/mysql-kubernetes-service-access-wildfly-pod-techtip72/
+
+=== Getting Started with Java EE 7 using WildFly and MySQL
+
+http://blog.arungupta.me/openshift-v3-getting-started-javaee7-wildfly-mysql/
+
 === Kubernetes 
 
 == Connect to Docker containers from JBoss Tools
