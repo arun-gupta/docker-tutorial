@@ -131,7 +131,7 @@ Git commit (server): 39fa2fa
 
 == Single Docker container
 
-== Two Docker containers (WildFly and MySQL) using linking
+== Two Docker containers (on same host) using linking
 
 http://blog.arungupta.me/wildfly-javaee7-mysql-link-two-docker-container-techtip65/
 
@@ -151,29 +151,29 @@ http://blog.arungupta.me/docker-container-linking-across-multiple-hosts-techtip6
 
 === Dockerfile syntax
 
-== Orchestrating Docker containers using Kubernetes
+= Orchestrating Docker containers using Kubernetes
 
-=== What is Kubernetes?
+== What is Kubernetes?
 
 http://blog.arungupta.me/key-concepts-kubernetes/
 
-=== Build Kubernetes on Mac
+== Build Kubernetes on Mac
 
 http://blog.arungupta.me/build-kubernetes-on-mac-techtip70/
 
-=== Java EE 7 and WildFly on Kubernetes using Vagrant
+== Java EE 7 and WildFly on Kubernetes using Vagrant
 
 http://blog.arungupta.me/javaee7-wildfly-kubernetes-mac-vagrant/
 
-=== MySQL as Kubernetes Service, Access from WildFly Pod
+== MySQL as Kubernetes Service, Access from WildFly Pod
 
 http://blog.arungupta.me/mysql-kubernetes-service-access-wildfly-pod-techtip72/
 
-=== Getting Started with Java EE 7 using WildFly and MySQL
+= OpenShift v3
+
+== Getting Started with Java EE 7 using WildFly and MySQL
 
 http://blog.arungupta.me/openshift-v3-getting-started-javaee7-wildfly-mysql/
 
-=== Kubernetes 
-
-== Connect to Docker containers from JBoss Tools
+= Connect to Docker containers from JBoss Tools
 
