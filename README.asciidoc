@@ -175,5 +175,13 @@ http://blog.arungupta.me/mysql-kubernetes-service-access-wildfly-pod-techtip72/
 
 http://blog.arungupta.me/openshift-v3-getting-started-javaee7-wildfly-mysql/
 
+== Setting up Load Balancer
+
+== Push-to-prod
+
+== Deployment Pipeline
+
+== Tooling
+
 = Connect to Docker containers from JBoss Tools
 
