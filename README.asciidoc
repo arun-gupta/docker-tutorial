@@ -47,6 +47,8 @@ Client communicates with Daemon, either co-located on the same host, or on a dif
 
 Docker uses Linux Containers to provide isolation, sandboxing, reproducibility, constraining resources, snapshotting and several other advantages. But that does not mean that mean it can only be used on Linux-based machines.
 
+*TBD*: Install Docker on your machine using http://blog.docker.com/2015/02/announcing-docker-machine-beta/[Docker Machine].
+
 Docker daemon and client for different operating systems can be installed from http://docs.docker.com/installation/. As you can see, it can be installed on a wide variety of platforms, including Mac and Windows. Refer to https://github.com/burrsutter/docker_tutorial[this excellent tutorial] for getting started on Windows.
 
 For non-Linux machines, a lightweight Virtual Machine needs to be installed and Daemon is installed within that. A native client is then installed on the machine that communicates with the Daemon.
